@@ -1,15 +1,28 @@
-from turtle import Turtle, Screen
+# from turtle import Turtle, Screen
+#
+# slowy = Turtle()
+#
+# # print(slowy)
+# slowy.shape("turtle")
+#
+# slowy.color("blue")
+#
+# # move the turtle forward by 100 paces
+# slowy.forward(100)
+#
+# Screen().exitonclick()
 
-slowy = Turtle()
+# print(Screen().canvheight)
 
-# print(slowy)
-slowy.shape("turtle")
+# Pretty Table
 
-slowy.color("blue")
+from prettytable import PrettyTable
 
-# move the turtle forward by 100 paces
-slowy.forward(100)
+table = PrettyTable()
 
-Screen().exitonclick()
+table.add_column("Pokemon name",["Pikachu", "Squirtle", "Charmander"])
+table.add_column("Type",["Electric", "Water", "Fire"])
 
-print(Screen().canvheight)
+table.align = "l"
+
+print(table)
