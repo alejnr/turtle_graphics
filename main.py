@@ -1,4 +1,4 @@
-import turtle
+from turtle import Turtle
 
-slowy = turtle.Turtle()
+slowy = Turtle()
 
